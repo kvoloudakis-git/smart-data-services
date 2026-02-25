@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SmartData Services IKE</title>
+  <title>SmartData Services Μονοπρόσωπη Ι.Κ.Ε.</title>
   <meta name="description" content="Official website of SmartData Services Single Member IKE" />
 
   <style>
@@ -44,6 +44,7 @@
 
     h1 { margin-bottom: 0.3em; }
     h2 { margin-top: 40px; }
+
     footer {
       margin-top: 60px;
       font-size: 0.9em;
@@ -119,15 +120,32 @@
 
   </div>
 
-  <footer>
-    © 2026 SmartData Services ΙΚΕ. Με επιφύλαξη παντός δικαιώματος.
-  </footer>
+  <!-- ================= FOOTERS ================= -->
+
+  <div id="footer-el" class="lang-section active">
+    <footer>
+      © 2026 SmartData Services ΙΚΕ. Με επιφύλαξη παντός δικαιώματος.
+    </footer>
+  </div>
+
+  <div id="footer-en" class="lang-section">
+    <footer>
+      © 2026 SmartData Services IKE. All rights reserved.
+    </footer>
+  </div>
+
+  <!-- ================= SCRIPT ================= -->
 
   <script>
     function setLanguage(lang) {
       document.getElementById('el').classList.remove('active');
       document.getElementById('en').classList.remove('active');
+      document.getElementById('footer-el').classList.remove('active');
+      document.getElementById('footer-en').classList.remove('active');
+
       document.getElementById(lang).classList.add('active');
+      document.getElementById('footer-' + lang).classList.add('active');
+
       document.documentElement.lang = lang;
     }
   </script>
