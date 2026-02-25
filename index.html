@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SmartData Services ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.</title>
+  <title>SmartData Services IKE</title>
   <meta name="description" content="Official website of SmartData Services Single Member IKE" />
+
   <style>
     body {
       font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
@@ -14,86 +15,104 @@
       line-height: 1.6;
       color: #222;
     }
-    h1 {
-      margin-bottom: 0.3em;
+
+    .lang-switch {
+      text-align: right;
+      margin-bottom: 20px;
     }
-    h2 {
-      margin-top: 40px;
-      margin-bottom: 0.5em;
+
+    .lang-switch button {
+      background: none;
+      border: 1px solid #ccc;
+      padding: 6px 10px;
+      cursor: pointer;
+      margin-left: 5px;
+      border-radius: 4px;
     }
-    hr {
-      margin: 50px 0;
+
+    .lang-switch button:hover {
+      background: #f0f0f0;
     }
+
+    .lang-section {
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+
+    h1 { margin-bottom: 0.3em; }
+    h2 { margin-top: 40px; }
     footer {
       margin-top: 60px;
       font-size: 0.9em;
       color: #555;
     }
-    .muted {
-      color: #666;
-    }
   </style>
 </head>
+
 <body>
 
-  <!-- ================= GREEK VERSION ================= -->
+  <div class="lang-switch">
+    <button onclick="setLanguage('el')">EL</button>
+    <button onclick="setLanguage('en')">EN</button>
+  </div>
 
-  <h1>SmartData Services Μονοπρόσωπη Ιδιωτική Κεφαλαιουχική Εταιρεία</h1>
-  <p class="muted">Η παρούσα ιστοσελίδα λειτουργεί για ενημερωτικούς σκοπούς.</p>
+  <!-- ================= GREEK ================= -->
 
-  <h2>Στοιχεία Εταιρείας</h2>
-  <p>
-    <strong>Επωνυμία:</strong> SmartData Services Μονοπρόσωπη Ιδιωτική Κεφαλαιουχική Εταιρεία<br>
-    <strong>Επωνυμία (Λατινικοί χαρακτήρες):</strong> SmartData Services Single Member P.C.<br>
-    <strong>Νομική Μορφή:</strong> Ι.Κ.Ε.<br>
-    <strong>Αριθμός ΓΕΜΗ:</strong> 190286003000<br>
-    <strong>EUID:</strong> ELGEMI.190286003000<br>
-    <strong>ΑΦΜ:</strong> 803130963<br>
-    <strong>Ημερομηνία Σύστασης:</strong> 13/01/2026<br>
-    <strong>Έδρα:</strong> ΗΡΑΚΛΕΟΥΣ 9, ΗΡΑΚΛΕΙΟ, ΒΟΡΕΙΟ ΤΟΜΕΑ ΑΘΗΝΩΝ, 14121, Ελλάδα<br>
-    <strong>Email:</strong> kvoloud@gmail.com<br>
-    <strong>Τηλέφωνο:</strong> 6980126022
-  </p>
+  <div id="el" class="lang-section active">
+    <h1>SmartData Services Μονοπρόσωπη Ιδιωτική Κεφαλαιουχική Εταιρεία</h1>
+    <p>Η παρούσα ιστοσελίδα λειτουργεί για ενημερωτικούς σκοπούς.</p>
 
-  <h2>Πολιτική Απορρήτου</h2>
-  <p>
-    Η παρούσα ιστοσελίδα δεν συλλέγει προσωπικά δεδομένα και δεν χρησιμοποιεί cookies.
-    Σε περίπτωση επικοινωνίας μέσω ηλεκτρονικού ταχυδρομείου,
-    τα στοιχεία χρησιμοποιούνται αποκλειστικά για την απάντηση στο αίτημα
-    και δεν διαβιβάζονται σε τρίτους.
-  </p>
+    <h2>Στοιχεία Εταιρείας</h2>
+    <p>
+      <strong>Αριθμός ΓΕΜΗ:</strong> 190286003000<br>
+      <strong>ΑΦΜ:</strong> 803130963<br>
+      <strong>Έδρα:</strong> ΗΡΑΚΛΕΟΥΣ 9, ΗΡΑΚΛΕΙΟ, 14121, Ελλάδα<br>
+      <strong>Email:</strong> kvoloud@gmail.com<br>
+      <strong>Τηλέφωνο:</strong> 6980126022
+    </p>
 
-  <hr>
+    <h2>Πολιτική Απορρήτου</h2>
+    <p>
+      Η ιστοσελίδα δεν συλλέγει προσωπικά δεδομένα και δεν χρησιμοποιεί cookies.
+    </p>
+  </div>
 
-  <!-- ================= ENGLISH VERSION ================= -->
+  <!-- ================= ENGLISH ================= -->
 
-  <h1>SmartData Services Single Member Private Company (IKE)</h1>
-  <p class="muted">This website is provided for informational purposes only.</p>
+  <div id="en" class="lang-section">
+    <h1>SmartData Services Single Member Private Company (IKE)</h1>
+    <p>This website is provided for informational purposes only.</p>
 
-  <h2>Company Information</h2>
-  <p>
-    <strong>Legal Name:</strong> SmartData Services Single Member Private Company (IKE)<br>
-    <strong>Legal Form:</strong> Private Company (IKE)<br>
-    <strong>GEMI Number:</strong> 190286003000<br>
-    <strong>EUID:</strong> ELGEMI.190286003000<br>
-    <strong>VAT Number:</strong> EL803130963<br>
-    <strong>Date of Incorporation:</strong> 13/01/2026<br>
-    <strong>Registered Office:</strong> 9 Irakleous Street, Irakleio, North Athens, 14121, Greece<br>
-    <strong>Email:</strong> kvoloud@gmail.com<br>
-    <strong>Phone:</strong> +30 6980126022
-  </p>
+    <h2>Company Information</h2>
+    <p>
+      <strong>GEMI Number:</strong> 190286003000<br>
+      <strong>VAT Number:</strong> EL803130963<br>
+      <strong>Registered Office:</strong> 9 Irakleous Street, 14121 Athens, Greece<br>
+      <strong>Email:</strong> kvoloud@gmail.com<br>
+      <strong>Phone:</strong> +30 6980126022
+    </p>
 
-  <h2>Privacy Notice</h2>
-  <p>
-    This website does not collect personal data and does not use cookies.
-    If you contact us via email, your information will be used solely
-    for the purpose of responding to your inquiry and will not be shared
-    with third parties.
-  </p>
+    <h2>Privacy Notice</h2>
+    <p>
+      This website does not collect personal data and does not use cookies.
+    </p>
+  </div>
 
   <footer>
-    © 2026 SmartData Services IKE. All rights reserved.
+    © 2026 SmartData Services IKE
   </footer>
+
+  <script>
+    function setLanguage(lang) {
+      document.getElementById('el').classList.remove('active');
+      document.getElementById('en').classList.remove('active');
+      document.getElementById(lang).classList.add('active');
+      document.documentElement.lang = lang;
+    }
+  </script>
 
 </body>
 </html>
